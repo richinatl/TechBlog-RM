@@ -1,0 +1,14 @@
+[
+  {
+    "name": "FizzBuzz",
+    "description": "There are a number of popular interview questions like the FizzBuzz algorithm, it's important to take the time to learn as many as you can so you're prepared"
+  },
+  {
+    "name": "Github",
+    "description": "Remembering to do a pull from main from your branch before doing a pull request helps reduce the number of conflicts that need resolved"
+  },
+  {
+    "name": "Keyboards",
+    "description": "Using a keyboard that fits your typing style can help your speed tremendously. Myself, I use a Razer clicky mechanical keyboard & I found it amazing"
+  }
+]
