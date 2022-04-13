@@ -1,0 +1,23 @@
+{{#if Blogs.length}}
+  <div class="col-md-6 project-list">
+    <h3>Current Blogs:</h3>
+
+    {{#each Blogs as |blog|}}
+    <div class="blog--div row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/blog/{{blog.id}}">{{blog.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+   {{else}}
+   <div class="noblogs--div">
+     <h4>Share something</h4>
+   </div>
+
+  <button class="btn newpost--btn" type="submit"><a href="/dashboard/new">New Blog</a></button> 

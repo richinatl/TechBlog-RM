@@ -1,0 +1,25 @@
+<section>  
+  <h2>
+    Edit Blog
+  </h2>
+  <form class="editBlog--form">
+    <div>
+      <input name="blog-title" type="text" value="{{blog.name}}" />      
+    </div>
+    <div>
+      Posted on {{format_date blog.dated_created}}
+      |
+      {{blog.comments.length}} {{format_plural "comment" blog.comments.length}}
+    </div>
+    <div>
+      <label for="blog-text">Post</label>
+      <textarea id="post-text" name="blog-text">{{blog.description}}</textarea>
+    </div>
+    <button type="submit">Save</button>
+    <button type="button" class="btn delete--btn">Delete Post</button>
+  </form>
+</section>
+
+
+<script src="/js/editBlog.js"></script>
+<script src="/js/deleteBlog.js"></script>

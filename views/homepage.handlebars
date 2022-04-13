@@ -1,17 +1,8 @@
+<ol class="blog--ol">
 <!-- Loop over each object in the projects array -->
 {{#each blogs as |blog| }}
-<div class="row mb-4 blog">
-  <div class="col-md-5">
-    <h2>
-      <a href="/blog/{{blog.id}}">{{blog.name}}</a>
-    </h2>
-    <p>
-    <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{blog.description}}
-    </p>
-  </div>
-</div>
+  <li class="blog--li">
+    {{> post-info post}}
+  </li>
 {{/each}}
+</ol>
